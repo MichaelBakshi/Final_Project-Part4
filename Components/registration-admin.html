@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="registration-admin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="registration-admin.js"></script>
+
+    <title>registration-administrator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="well form-horizontal" id="contact_form">
+          <fieldset>
+      
+            <!-- Form Name -->
+            <legend>
+              <center>
+                <h2><b>Registration Form</b></h2>
+              </center>
+            </legend><br>
+
+
+
+                <!-- Tab links -->
+  <div class="tab">
+    <a  href="registration-customer.html">
+      <span class="tab-link"><b>Customer</b></span>
+  </a>
+  <a href="registration-airline.html">
+      <span class="tab-link">Airline</span>
+  </a>
+  <a style="font-weight:bold" href="registration-admin.html">
+      <span class="tab-link">Administrator</span>
+  </a>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Administrator" class="tabcontent">
+    <!-- Text input-->
+      
+    <div class="form-group">
+        <label class="col-md-4 control-label">First Name</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="first_name" name="first_name" placeholder="First Name" class="form-control" type="text" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Last Name</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="last_name" name="last_name" placeholder="Last Name" class="form-control" type="text" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label class="col-md-4 control-label">Level</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <select id="level" name="level" placeholder="Select your level of access" type="text" class="form-control selectpicker">                  
+                <option value="">Select your level of access</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Username</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="user_name" name="user_name" placeholder="Username" class="form-control" type="text" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Password</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="user_password" name="user_password" placeholder="Password" class="form-control" type="password" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      
+      <div class="form-group">
+        <label class="col-md-4 control-label">Confirm Password</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="confirm_password" name="confirm_password" placeholder="Confirm Password" class="form-control" type="password" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input id="email" name="email" placeholder="E-Mail Address" class="form-control"  type="email" required >
+          </div>
+        </div>
+      </div>
+
+                  <!-- Success message -->
+                  <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+      
+                  <!-- Button -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4"><br>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                    </div>
+                  </div>
+            
+                </fieldset>
+              </form>
+            </div>
+            </div><!-- /.container -->
+      </body>
+
+      <button class="btn btn-warning" style="text-align: center;" onclick="register()">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT 
+        <span class="glyphicon glyphicon-send"></span>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </button>
+
+  </div>
+  
+
+</html>
