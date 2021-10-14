@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel= "stylesheet" href= "C:\Users\Michael Bakshi\HTML\Final_Project-Part4\login.css">
+    <title></title>
+    <style>
+        body {background-color: powderblue;}
+        h1 {color:darkred;}
+        
+        p {color: blue;}
+      </style>
+</head>
+<body>
+    <h1 style="text-align:center;">WELCOME TO FLIGHT CENTER</h1>
+    <br>
+    <h1 style="text-align:center;">Please enter your details below:</h1>
+    <form>
+        <div class="imgcontainer">
+          <img src="img/mike-wazowski-png-1093212.png" style="width: 300px;height:300px" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="UserName" id="username" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="Password" id="password" required>
+      
+         
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <br>
+          <br>
+
+          
+
+          
+          <label>
+          </label>
+        </div>
+      
+        <button type="submit" onclick="signin()" >Login</button>
+      </form>
+      
+        <Label style="color: seagreen; font-size:20px;">Not a member yet? Please sign up below:</Label>
+        <button onclick="location.href = 'registration-customer.html'">Sign Up</button>
+      
+      
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="login.js"></script>
+</body>
+</html>
